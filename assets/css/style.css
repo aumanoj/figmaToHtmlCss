@@ -4,7 +4,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 15px;
-    color: #121217;
+    color: #000;
     margin: 0;
 }
 
@@ -18,9 +18,25 @@ p {
     line-height: 30.6px;
 }
 
-h1,
+h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 70px;
+
+}
 h2 {
     margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+}
+h3 {
+ text-align: justify;
+}
+.text-left {
+    text-align: left;
 }
 
 ul {
@@ -48,17 +64,20 @@ img {
 
 a.learn-more {
     color: #000;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 31.72px;
     letter-spacing: -0.52px;
     display: inline-flex;
     align-items: center;
 }
+a.learn-more:hover {
+    color: rgba(25, 25, 25, .7);
+}
 
 .container {
     max-width: 1380px;
-    padding: 0 15px;
+    padding: 0 50px;
     margin: 0 auto;
 }
 
@@ -76,7 +95,6 @@ a.learn-more {
 
 .primary-btn:hover {
     background-color: #9F73D4;
-    color: #fff;
 }
 
 .header {
@@ -141,7 +159,7 @@ a.learn-more {
 
 /* Banner  */
 .banner {
-    padding: 104px 0;
+    padding: 18px 0 62px;
     display: flex;
     align-items: flex-start;
     gap: 90px;
@@ -152,12 +170,8 @@ a.learn-more {
     width: calc(50% - 45px);
 }
 
-.banner h1 {
-    font-size: 74px;
-    font-weight: 800;
-    line-height: 80px;
-    letter-spacing: -3.2px;
-    margin: 0 0 20px;
+.banner h1, .banner h2 {
+    margin: 0 0 24px;
 }
 
 .banner h1 span {
@@ -165,7 +179,7 @@ a.learn-more {
 }
 
 .banner .line {
-    max-width: 635px;
+    max-width: 225px;
 }
 
 .banner .dashboard {
@@ -193,7 +207,10 @@ a.learn-more {
 
 /* Win Rates: Our Guiding North Star  */
 .win-rate {
-    background: url(../img/winrates.png), #EBEDFC 50% / cover no-repeat;
+    background: url(../img/winrates.png), #EBEDFC 50%;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .win-rate .win-rate-wrapper {
@@ -207,9 +224,6 @@ a.learn-more {
 }
 
 .win-rate .win-rate-inner h2 {
-    font-size: 53px;
-    line-height: 63.84px;
-    letter-spacing: -1.68px;
     margin: 0 0 30px;
 }
 
@@ -247,7 +261,7 @@ a.learn-more {
     top: 0;
     bottom: 0;
     left: 0;
-    width: 50px;
+    width: 100px;
     z-index: 10;
 }
 
@@ -287,19 +301,17 @@ a.learn-more {
 .win-rate .win-rate-inner .right-inner .owl-carousel .owl-item .item img {
     height: 100%;
     object-fit: contain;
+    filter: drop-shadow(5px 5px 5px #d9d9d9);
 }
-
 /* Why Us  */
 .why-us {
     padding: 120px 0;
     background: url(../img/why-us.png), #121217;
+    background-size:100%;
 }
 
-.why-us h2 {
+.why-us h1 {
     color: #FFF;
-    font-size: 53px;
-    font-weight: 700;
-    line-height: 30.6px;
     margin: 0 0 44px;
 }
 
@@ -311,25 +323,27 @@ a.learn-more {
 
 .why-us ul li {
     width: calc(33.33% - 30px);
-    padding: 85px 0 60px;
+    padding: 15px 0;
+}
+
+.why-us ul li h2 {
+    color: #FFF;
+font-size: 30px;
+font-weight: 600;
+line-height: 46.08px; 
 }
 
 .why-us ul li h3 {
     color: #FFF;
-    font-size: 36.4px;
-    line-height: 46.08px;
-    letter-spacing: -0.768px;
-    margin: 0 0 50px;
-}
-
-.why-us ul li p {
-    color: #FFF;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px; 
 }
 
 
 /* No Commitment */
 .no-commitment {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .no-commitment .no-commitment-wrapper {
@@ -338,8 +352,6 @@ a.learn-more {
 
 .no-commitment .no-commitment-wrapper .left {
     width: 50%;
-    border-radius: 20px;
-    border: 1px solid #BBBAB8;
 }
 
 .no-commitment .no-commitment-wrapper .left .heading {
@@ -423,83 +435,63 @@ a.learn-more {
     padding: 0 0 0 123px;
 }
 
-.no-commitment .no-commitment-wrapper .right h2 {
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 63.84px;
-    letter-spacing: -1.68px;
+.no-commitment .no-commitment-wrapper .right h1 {
     margin: 0 0 50px;
 }
 
-.no-commitment .no-commitment-wrapper .right p {
+.no-commitment .no-commitment-wrapper .right h2 {
     margin: 0 0 15px;
 }
 
-.no-commitment .no-commitment-wrapper .right p span {
-    color: #6C6C89;
-}
-
-.no-commitment .no-commitment-wrapper .right p span b {
+.no-commitment .no-commitment-wrapper .right h2 span b {
     font-weight: 700;
 }
 
 /* A behind-the-scenes view  */
 .behind-the-scenes-view {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
-.behind-the-scenes-view h2 {
-    color: #000;
-    font-size: 52px;
-    font-weight: 700;
-    letter-spacing: 2px;
+.behind-the-scenes-view h1 {
     text-transform: uppercase;
     margin: 0 0 30px;
 }
 
-.behind-the-scenes-view p {
-    max-width: 1090px;
-    margin: 0 0 50px;
-    color: #909293;
-    font-size: 24px;
-    line-height: 30.6px;
+.behind-the-scenes-view h3 {
+    color: #121217;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31.72px; /* 176.222% */
+    text-align: justify;
 }
 
 .behind-the-scenes-view ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px 150px;
+    gap: 20px 150px;
 }
 
 .behind-the-scenes-view ul li {
-    width: calc(50% - 150px);
+    width: calc(50% - 75px);
     display: flex;
     gap: 12px;
-    align-items: flex-start;
+    align-items: baseline;
 }
 
 .behind-the-scenes-view ul li .content {
     width: calc(100% - 43px);
-
 }
 
 
-.behind-the-scenes-view ul li .content h4 {
-    font-size: 24px;
+.behind-the-scenes-view ul li .content h2 {
+    color: #121217;
+    font-size: 30px;
     font-weight: 500;
-    line-height: 31.72px;
-    letter-spacing: -0.52px;
+    line-height: 40px;
     margin: 0 0 15px;
 }
 
-.behind-the-scenes-view ul li .content span {
-    color: #000;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 31.72px;
-    letter-spacing: -0.52px;
-}
+
 
 .bg-gredient {
     background: linear-gradient(0deg, #EBEDFC 0%, #FFF 100%);
@@ -507,19 +499,14 @@ a.learn-more {
 
 /* Our Approach: Security First, Always  */
 .our-approach {
-    padding: 132px 0;
+    padding: 50px 0;
 }
 
-.our-approach h2 {
-    font-size: 50px;
-    font-weight: 700;
+.our-approach h1 {
     margin: 0 0 45px;
 }
 
-.our-approach p {
-    color: #909293;
-    font-family: Inter;
-    font-size: 24px;
+.our-approach h2 {
     margin: 0 0 31px;
 }
 
@@ -561,11 +548,8 @@ a.learn-more {
     padding: 65px 0 125px;
 }
 
-.clients-worldwide h2 {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 30.6px;
-    margin: 0 0 133px;
+.clients-worldwide h1 {
+    margin: 0 0 80px;
 }
 
 .clients-worldwide .inner-wrapper {
@@ -590,7 +574,7 @@ a.learn-more {
 }
 
 .clients-worldwide .inner-wrapper .inner .company img {
-    width: 48.5px;
+    width: 67.5px;
 }
 
 .clients-worldwide .inner-wrapper .inner .company span {
@@ -600,21 +584,13 @@ a.learn-more {
     line-height: 32.4px;
 }
 
-.clients-worldwide .inner-wrapper .inner p {
-    font-size: 20px;
-    line-height: 32.4px;
+.clients-worldwide .inner-wrapper .inner h2 {
     margin: 0 0 36px;
 }
 
-.clients-worldwide .inner-wrapper .inner h3 {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 32.4px;
-    margin: 0;
-}
 
-.clients-worldwide .inner-wrapper .inner h3 span {
-    font-weight: 400;
+.clients-worldwide .inner-wrapper .inner h2 span {
+    font-weight: 700;
 }
 
 .clients-worldwide .owl-nav {
@@ -637,33 +613,27 @@ a.learn-more {
     padding: 56px 0;
 }
 
-.recent-blog h2 {
-    color: #121217;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 63.84px;
-    letter-spacing: -1.68px;
+.recent-blog h1 {
     margin: 0 0 35px;
 }
 
 .recent-blog .inner-wrapper {
     display: flex;
     align-items: flex-start;
-    gap: 250px;
+    gap: 105px;
 }
 
 .recent-blog .inner-wrapper .blog-inner {
-    width: calc(50% - 125px);
+    width: calc(50% - 52.5px);
     border-radius: 30px;
 }
 
-.recent-blog .inner-wrapper .blog-inner p {
+.recent-blog .inner-wrapper .blog-inner h2 {
     background: #8E44AD;
     overflow: hidden;
     padding: 30px;
     color: #fff;
     margin: 0;
-    letter-spacing: -1.68px;
     border-radius: 30px 30px 0 0;
 }
 
@@ -693,10 +663,8 @@ a.learn-more {
     width: calc(50% - 50px);
 }
 
-.faq h2 {
-    font-size: 50px;
-    font-weight: 700;
-    margin: 0 0 72px;
+.faq h1 {
+    margin: 0 0 40px;
 }
 
 .faq .accordion .card {
@@ -706,16 +674,17 @@ a.learn-more {
     margin: 0 0 30px;
 }
 
-.faq .accordion .card h4.accordion-item {
+.faq .accordion .card h2.accordion-item {
     padding: 15px 45px 15px 15px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     margin: 0;
     cursor: pointer;
     position: relative;
+    text-align: left;
 }
 
-.faq .accordion .card h4.accordion-item span {
+.faq .accordion .card h2.accordion-item span {
     height: 24px;
     width: 24px;
     border: 1px solid #121217;
@@ -727,7 +696,7 @@ a.learn-more {
     transform: translateY(-50%);
 }
 
-.faq .accordion .card h4.accordion-item span::before {
+.faq .accordion .card h2.accordion-item span::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -738,7 +707,7 @@ a.learn-more {
     width: 60%;
 }
 
-.faq .accordion .card h4.accordion-item span::after {
+.faq .accordion .card h2.accordion-item span::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -749,7 +718,7 @@ a.learn-more {
     height: 60%;
 }
 
-.faq .accordion .card h4.accordion-item.active span::after {
+.faq .accordion .card h2.accordion-item.active span::after {
     display: none;
 }
 
@@ -762,7 +731,7 @@ a.learn-more {
 /* Footer  */
 footer {
     background-color: #121217;
-    padding: 83px 0 15px;
+    padding: 40px 0;
 }
 
 footer .inner-footer {
@@ -782,7 +751,6 @@ footer .inner-footer .inner-wrapper.logo {
     display: flex;
     align-items: flex-start;
     gap: 11px;
-    padding: 15px 0 0;
 }
 
 footer .inner-footer .inner-wrapper:first-child {
@@ -794,13 +762,11 @@ footer .inner-footer .inner-wrapper img {
     max-width: 122px;
 }
 
-footer .inner-footer .inner-wrapper p {
+footer .inner-footer .inner-wrapper h2 {
     color: #fff;
-    font-size: 16px;
-    line-height: 25.6px;
 }
 
-footer .inner-footer .inner-wrapper p span {
+footer .inner-footer .inner-wrapper h2 span {
     font-weight: 500;
     margin: 0 0 13px;
     display: block;
@@ -818,7 +784,7 @@ footer .inner-footer .inner-wrapper ul li {
 
 footer .inner-footer .inner-wrapper ul li a {
     color: rgba(255, 255, 255, 0.60);
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25.6px;
 }
 
@@ -849,13 +815,11 @@ footer .copy-right a {
     padding: 50px 0;
 }
 
-.our-story h2 {
-    font-size: 50px;
-    font-weight: 800;
+.our-story h1 {
     margin: 0 0 30px;
 }
 
-.our-story h2 span {
+.our-story h1 span {
     color: #7F54B3;
 }
 
@@ -865,8 +829,7 @@ footer .copy-right a {
     font-weight: 700;
 }
 
-.our-story p {
-    color: #909293;
+.our-story h2 {
     margin: 15px 0 0;
 }
 
@@ -876,7 +839,7 @@ footer .copy-right a {
     background: url(../img/why-us.png), #121217;
 }
 
-.features h2 {
+.features h1 {
     color: #FFF;
     font-size: 50px;
     font-weight: 700;
@@ -899,7 +862,7 @@ footer .copy-right a {
     display: flex;
     align-items: baseline;
     gap: 20px;
-    min-height: 200px;
+    min-height: 250px;
     position: relative;
 }
 
@@ -923,7 +886,7 @@ footer .copy-right a {
     margin: 0 0 10px;
 }
 
-.features .wrapper .inner-wrapper .item p {
+.features .wrapper .inner-wrapper .item h2 {
     color: #FFF;
 }
 
@@ -932,7 +895,7 @@ footer .copy-right a {
 }
 
 .features .wrapper .inner-wrapper:first-child .item h3,
-.features .wrapper .inner-wrapper:first-child .item p {
+.features .wrapper .inner-wrapper:first-child .item h2 {
     text-align: right;
 }
 
@@ -996,13 +959,11 @@ footer .copy-right a {
 }
 
 
-.pricing h2 {
-    font-size: 53px;
-    font-weight: 700;
+.pricing h1 {
     margin: 0 0 42px;
 }
 
-.pricing h2 span {
+.pricing h1 span {
     color: #7F54B3;
 }
 
@@ -1012,8 +973,7 @@ footer .copy-right a {
     margin: 0 0 65px;
 }
 
-.pricing p {
-    color: #6C6C89;
+.pricing h2 {
     margin: 0 0 20px;
 }
 
@@ -1024,20 +984,16 @@ footer .copy-right a {
     padding: 36px 55px;
 }
 
-.pricing .right-wrapper h4 {
-    font-size: 50px;
-    font-weight: 400;
-    margin: 0 0 40px;
+.pricing .right-wrapper h2 {
+    max-width: 220px;
+    margin: 0 auto 29px;
+    text-align: center;
+}
+.pricing .right-wrapper h3 {
     text-align: center;
 }
 
-.pricing .right-wrapper p {
-    color: #000;
-    max-width: 220px;
-    margin: 0 auto 29px;
-}
-
-.pricing .right-wrapper p span {
+.pricing .right-wrapper h2 span {
     font-size: 52px;
     font-weight: 700;
 }
@@ -1051,6 +1007,7 @@ footer .copy-right a {
     display: flex;
     gap: 12px;
     padding: 15px 0;
+
 }
 
 .pricing .right-wrapper ul li svg {
@@ -1059,6 +1016,7 @@ footer .copy-right a {
 
 .pricing .right-wrapper ul li span {
     font-size: 18px;
+    text-align: justify;
 }
 
 .gap {
@@ -1069,15 +1027,15 @@ footer .copy-right a {
     padding: 50px 0;
 }
 
-.demo h2 {
-    font-size: 53px;
+.demo h1 {
     margin: 0 0 50px;
     text-align: center;
 }
 
-.demo p {
+.demo h2 {
     text-align: center;
-    margin: 0 0 50px;
+    margin: 0 auto 50px;
+    max-width: 380px;
 }
 
 .demo .inner-wrapper {
@@ -1091,14 +1049,14 @@ footer .copy-right a {
 }
 
 .demo .inner-wrapper .form-group {
-    margin: 0 0 7px;
+    margin: 0 0 15px;
     width: 100%;
 }
 
 .demo .inner-wrapper .form-group label {
     color: #000;
-    font-size: 10.5px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 400;
     display: block;
     margin: 0 0 5px;
 }
@@ -1141,6 +1099,9 @@ footer .copy-right a {
     .behind-the-scenes-view ul li {
         width: calc(50% - 30px);
     }
+    .behind-the-scenes-view ul li a.learn-more {
+        margin-left: 40px;
+    }
 
     .our-approach ul {
         gap: 30px 0;
@@ -1170,16 +1131,16 @@ footer .copy-right a {
     footer .inner-footer .inner-wrapper:first-child {
         padding-right: 10px;
     }
+    .container {
+        padding: 0 15px;
+    }
 }
 
 @media (max-width:767px) {
     .menu-bar {
         display: block;
     }
-    .demo h2 {
-        font-size: 33px;
-        margin: 0 0 30px;
-    }
+    
     .header {
         padding: 20px 0;
     }
@@ -1228,19 +1189,9 @@ footer .copy-right a {
         padding: 38px 0;
     }
 
-    .banner h1 {
-        font-size: 33px;
-        line-height: 45.5px;
-        letter-spacing: normal;
-    }
 
-    .banner .content p {
-        font-size: 16px;
-        line-height: 25px;
-    }
-
-    .banner .content .primary-btn {
-        width: 98%;
+    .banner .line {
+        max-width: 60%;
     }
 
     .win-rate .win-rate-wrapper {
@@ -1249,14 +1200,14 @@ footer .copy-right a {
 
     .win-rate .win-rate-inner {
         width: 100%;
+        padding: 15px 0;
     }
-
-    .win-rate .win-rate-inner h2 {
-        font-size: 33px;
-        line-height: 45.5px;
-        letter-spacing: normal;
+    .why-us {
+        padding: 50px 0;
     }
-
+    .why-us ul {
+        gap: 0;
+    }
     .why-us ul li {
         width: 100%;
         padding: 25px 0 20px;
@@ -1270,11 +1221,6 @@ footer .copy-right a {
         padding: 50px 0;
     }
 
-    .no-commitment .no-commitment-wrapper .right h2 {
-        font-size: 33px;
-        line-height: 45.5px;
-        letter-spacing: normal;
-    }
 
     .behind-the-scenes-view ul li {
         width: 100%;
@@ -1284,32 +1230,17 @@ footer .copy-right a {
         padding: 50px 0;
     }
 
-    .behind-the-scenes-view h2 {
-        font-size: 33px;
-        line-height: 45.5px;
-        letter-spacing: normal;
-    }
+
 
     .our-approach {
         padding: 50px 0;
     }
 
-    .our-approach h2 {
-        font-size: 33px;
-        line-height: 45.5px;
-        letter-spacing: normal;
-    }
 
     .our-approach ul li {
         width: 50%;
     }
 
-    .clients-worldwide h2 {
-        font-size: 33px;
-        line-height: 45.5px;
-        letter-spacing: normal;
-        margin: 0px 0 60px
-    }
 
     .clients-worldwide .inner-wrapper {
         flex-direction: column;
@@ -1327,15 +1258,7 @@ footer .copy-right a {
         padding: 50px 0;
     }
 
-    .faq h2 {
-        font-size: 33px;
-        line-height: 45.5px;
-        letter-spacing: normal;
-    }
 
-    .faq .accordion .card h4.accordion-item {
-        font-size: 20px;
-    }
 
     .recent-blog .inner-wrapper {
         flex-wrap: wrap;
@@ -1361,9 +1284,6 @@ footer .copy-right a {
         padding: 5px 0;
     }
 
-    footer .inner-footer .inner-wrapper h3 {
-        margin: 20px 0 0;
-    }
 
     .clients-worldwide .owl-nav {
         justify-content: center;
@@ -1392,42 +1312,29 @@ footer .copy-right a {
     }
 
     .features .wrapper .inner-wrapper:first-child .item h3,
-    .features .wrapper .inner-wrapper:first-child .item p {
+    .features .wrapper .inner-wrapper:first-child .item h2 {
         text-align: left;
     }
 
-    .pricing h2 {
-        font-size: 33px;
-        margin: 0;
-    }
-
-    .pricing h3 {
-        font-size: 32px;
-        margin: 0 0 15px;
-    }
-
+    
     .pricing .right-wrapper {
         padding: 15px;
     }
-
-    .pricing .right-wrapper h4 {
-        font-size: 32px;
+    h1 {
+        font-size: 33px;
+        line-height: 53px;
+    
+    }
+    h2 {
+        font-size: 15px;
+        line-height: 27px;
+    }
+    footer .inner-footer .inner-wrapper.logo {
+        flex-direction: column;
         margin: 0 0 20px;
     }
-
-    .features h2 {
-        font-size: 33px;
+    footer .inner-footer .inner-wrapper ul li a {
+        font-size: 15px;
     }
-
-    .features .wrapper .inner-wrapper .item h3 {
-        font-size: 24px;
-    }
-
-    .our-story h2 {
-        font-size: 33px;
-    }
-
-    .our-story h3 {
-        font-size: 20px;
-    }
+   
 }
